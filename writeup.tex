@@ -1,0 +1,59 @@
+\documentclass[12pt,a4paper]{article}
+\input{shun4imports}
+\input{shun4colors}
+\input{shun4cmds}
+
+\lhead{[Course Title]}
+\chead{[Core Title]}
+\rhead{Shun (@shun4midx)}
+
+\begin{document}
+\begin{center}
+  {\Large \bf [Core Title]}\\[8pt]
+  \textbf{Author:} Shun (@shun4midx)
+\end{center}
+
+\bluesec{[Big Title/Topic Title]}
+
+\purplesec{[Subtitle/Question Number]}
+
+\pinkbox{Box Title}{
+\begin{itemize}
+  \item Typing the whole command for a backslash is annoying so I can just type \texttt{\bs bs} for a \bs
+  \item Actually, I can \hl{highlight text} with \texttt{\bs hl} --- better yet, I can \hlbf{bold the highlighted text} with \texttt{\bs hlbf}, or I can \hlit{italicize the highlighted text} with \texttt{\bs hlit}.
+  \item I can even \ghl{highlight the text in green} with \texttt{\bs ghl}
+  \item Otherwise I can just \textbf{bold stuff} or \textit{italicize stuff} or \textbf{\textit{do both}}.
+  \item If I want to \boxtxt{box my answer that is in plain text}, I can do that with \texttt{\bs boxtxt}, or I can box math with standard \LaTeX to type one of my favorite time complexities: $\boxed{O(\alpha^\star(n))}$.
+\end{itemize}
+}
+
+\begin{shuncode}[C/C++ Code Title, Modify the language in \texttt{shun4cmds.tex} if you use another language]
+#include <iostream>
+
+int main() {
+  std::cout << "Lorem ipsum because Hello World is quite boring ngl.";
+  return 0;
+}
+\end{shuncode}
+
+\begin{shuncmd}[Terminal Command Line Code Title]
+> cd garden
+> touch grass
+\end{shuncmd}
+
+\noindent Yes, you can type normal text not in boxes too \\
+
+\noindent ... and have paragraphs of them. \\
+
+\bluebigbox{\section*{I rarely use this but I can make a blue big box}}{
+  With mini text inside
+}
+
+\newchap{This is a chapter header (The box will be empty)}
+
+\noindent You can also cite stuff \cite{gt85} that will pop up in your bibliography in your PDF if you include all your refernces in BibTeX in \texttt{references.bib}. Below, you can see how it looks like when cited, because oh how much I love \cite{gt85}. \\
+
+\bluesec{References}
+\printbibliography[heading=none]
+
+\end{document}
