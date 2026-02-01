@@ -12,4 +12,4 @@ If for some reason you do not like this color scheme, all boxes and highlights o
 In `writeup.tex`, I have a very simple template of how to use my imported files' most commonly used capabilities outside of normal LaTeX. When rendered, it looks like `writeup.pdf`.
 
 ## Documentation
-It should be clear from reading the files directly, but I will update this later if anything is unclear
+It should be clear from reading the files directly, but I will update this later if anything is unclear.
